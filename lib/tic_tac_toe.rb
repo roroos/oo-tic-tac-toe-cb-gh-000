@@ -1,5 +1,3 @@
-t = TicTacToe.new
-t.play
 
 Class TicTacToe {
 PLAYER_ONE='X'
@@ -18,6 +16,10 @@ WIN_COMBINATIONS = [
 ]
 turnc=0
 token = "X"
+
+t = TicTacToe.new
+t.play
+
 
 def initialize_board
 @count=0
