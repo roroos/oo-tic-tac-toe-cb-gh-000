@@ -8,6 +8,7 @@ WIN_COMBINATIONS = [
 [0,4,8]
 [2,4,6]
 ]
+turnc=0
 def initialize
 board = Array.new(9, " ")
 end
@@ -50,4 +51,6 @@ def turn
     turn
   end
 end
+
+turn_count
 }
