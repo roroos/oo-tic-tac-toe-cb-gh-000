@@ -11,7 +11,13 @@ WIN_COMBINATIONS = [
 def initialize
 board = Array.new(9, " ")
 end
+
 def display_board
   puts board
+end
+
+def input_to_index
+  puts "Your turn!"
+  input = gets
 end
 }
