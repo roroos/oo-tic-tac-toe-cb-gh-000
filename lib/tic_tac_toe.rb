@@ -75,9 +75,9 @@ def turn_count(board)
 
 def current_player
   if turnc % 2 == 0
-    token = "X"
+    @player = PLAYER_ONE
   else
-    token = "O"
+    @player = PLAYER_TWO
   end
 end
 
