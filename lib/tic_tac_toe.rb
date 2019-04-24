@@ -78,7 +78,14 @@ def current_player
   end
 end
 
-def won
+def play(board)
+  until over(board)
+    turn(board)
+  end
+  if won(board)
+    winner(board) == "X" || winner(board) == "O"
+
+def won(board)
 WIN_COMBINATIONS.each do |win_combination|
   win_index_1 = win_combination[0]
   win_index_2 = win_combination[1]
