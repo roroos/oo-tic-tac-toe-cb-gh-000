@@ -48,7 +48,7 @@ if position_taken(board,index)==false && 0 < index < 9
   end
 end
 
-def turn
+def turn(board)
   choice = input_to_index
   if valid_move(choice) == true
     move(choice,token)
@@ -87,6 +87,8 @@ def play(board)
     puts "congrats #{winner(board)}!"
   elsif draw(board)
     puts "Draw!"
+  end
+end
 
 
 def won(board)
