@@ -53,9 +53,9 @@ def turn
   if valid_move(choice) == true
     move(choice,token)
     turnc++
-  else
-    puts "Error!"
-    turn
+    else
+      puts "Error!"
+      turn
   end
 end
 
