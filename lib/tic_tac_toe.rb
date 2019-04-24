@@ -24,6 +24,7 @@ def input_to_index
 end
 
 def move(index,token)
+  board[index]=token
 end
 
 def position_taken(index)
@@ -55,4 +56,7 @@ end
 
 def turn_count
   puts turnc
+end
+
+def won
 }
