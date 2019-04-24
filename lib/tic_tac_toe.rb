@@ -61,6 +61,9 @@ end
 
 def turn_count(board)
   turnc = 0
+  board.each do |spaces|
+      if spaces == "X" || spaces == "O"
+
 end
 def current_player
   if turnc % 2 == 0
