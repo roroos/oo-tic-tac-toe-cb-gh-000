@@ -23,4 +23,12 @@ end
 
 def move(index,token)
 end
+
+def position_taken(index)
+if board[index]== " "
+
+else
+
+end
+end
 }
