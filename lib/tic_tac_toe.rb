@@ -21,6 +21,6 @@ def input_to_index
   index = gets -1
 end
 
-def move(index,input)
-
+def move(index,token)
+end
 }
