@@ -1,3 +1,6 @@
+t = TicTacToe.new
+t.play
+
 Class TicTacToe {
 PLAYER_ONE='X'
 PLAYER_TWO='O'
@@ -129,5 +132,4 @@ def over(board)
 end
 
 }
-t = TicTacToe.new
-t.play
+
