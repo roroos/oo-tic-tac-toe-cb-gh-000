@@ -81,4 +81,7 @@ WIN_COMBINATIONS.each do |win_combination|
   position_1 == position_2 && position_2 == position_3 && position_taken(board, win_index_1)
   end
 end
+
+def full(board)
+  board.all? { |i| i=="X" || i == "O"  }
 }
