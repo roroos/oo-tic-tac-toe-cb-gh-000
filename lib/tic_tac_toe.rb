@@ -69,7 +69,6 @@ def turn_count(board)
     turnc
   end
 
-end
 def current_player
   if turnc % 2 == 0
     token = "X"
