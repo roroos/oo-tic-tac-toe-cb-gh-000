@@ -18,8 +18,9 @@ end
 
 def input_to_index
   puts "Your turn!"
-  input = gets -1
+  index = gets -1
 end
 
-def move(board,input)
+def move(index,input)
+
 }
