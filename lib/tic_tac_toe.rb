@@ -47,6 +47,7 @@ def turn
     move(choice,token)
   else
     puts "Error!"
+    turn
   end
 end
 }
