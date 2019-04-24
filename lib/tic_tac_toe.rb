@@ -52,5 +52,6 @@ def turn
   end
 end
 
-turn_count
+def turn_count
+  turnc++
 }
