@@ -34,7 +34,7 @@ end
 
 def valid_move(index)
 if position_taken(index)==false && 0 < index < 9
-
+return true
 end
 end
 
