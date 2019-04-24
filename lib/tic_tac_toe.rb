@@ -46,7 +46,7 @@ def turn
   if valid_move(choice) == true
     move(choice,token)
   else
-
+    puts "Error!"
   end
 end
 }
