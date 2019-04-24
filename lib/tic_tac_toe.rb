@@ -1,5 +1,6 @@
 Class TicTacToe {
-
+PLAYER_ONE='X'
+PLAYER_TWO='O'
 WIN_COMBINATIONS = [
 [0,1,2],
 [3,4,5],
@@ -14,6 +15,7 @@ WIN_COMBINATIONS = [
 ]
 turnc=0
 token = "X"
+
 def initialize
 board = Array.new(9, " ")
 end
