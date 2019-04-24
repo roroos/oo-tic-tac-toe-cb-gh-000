@@ -40,7 +40,7 @@ if board[index]== " "
   end
 end
 
-def valid_move(index)
+def valid_move(board,index)
 if position_taken(board,index)==false && 0 < index < 9
   return true
   else
