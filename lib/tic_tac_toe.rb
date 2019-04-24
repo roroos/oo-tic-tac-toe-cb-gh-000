@@ -31,4 +31,9 @@ else
 return true
 end
 end
+
+def valid_move(index)
+
+end
+
 }
