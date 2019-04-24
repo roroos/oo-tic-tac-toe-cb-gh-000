@@ -46,6 +46,7 @@ def turn
   choice = input_to_index
   if valid_move(choice) == true
     move(choice,token)
+    turnc++
   else
     puts "Error!"
     turn
@@ -53,5 +54,5 @@ def turn
 end
 
 def turn_count
-  turnc++
+  puts turnc
 }
