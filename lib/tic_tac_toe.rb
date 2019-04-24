@@ -85,6 +85,9 @@ def play(board)
   if won(board)
     winner(board) == "X" || winner(board) == "O"
     puts "congrats #{winner(board)}!"
+  elsif draw(board)
+    puts "Draw!"
+
 
 def won(board)
 WIN_COMBINATIONS.each do |win_combination|
