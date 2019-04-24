@@ -23,7 +23,7 @@ def initialize_board
 end
 
 def display_board
-  puts board
+  puts @board
 end
 
 def input_to_index
@@ -33,11 +33,11 @@ def input_to_index
 end
 
 def move(index,token)
-  board[index]=token
+  @board[index]=token
 end
 
 def position_taken(board,index)
-if board[index]== " "
+if @board[index]== " "
   return false
   else
     return true
@@ -45,7 +45,7 @@ if board[index]== " "
 end
 
 def valid_move(board,index)
-if position_taken(board,index)==false && 0 < index < 9
+if position_taken(@board,index)==false && 0 < index < 9
   return true
   else
     return false
@@ -65,7 +65,7 @@ end
 
 def turn_count(board)
   turnc = 0
-  board.each do |spaces|
+  @board.each do |spaces|
       if spaces == "X" || spaces == "O"
         turnc += 1
       end
@@ -82,13 +82,13 @@ def current_player
 end
 
 def play(board)
-  until over(board)
-    turn(board)
+  until over(@board)
+    turn(@board)
   end
-  if won(board)
-    winner(board) == "X" || winner(board) == "O"
-    puts "congrats #{winner(board)}!"
-  elsif draw(board)
+  if won(@board)
+    winner(@board) == "X" || winner(@board) == "O"
+    puts "congrats #{winner(@board)}!"
+  elsif draw(@board)
     puts "Draw!"
   end
 end
@@ -100,30 +100,30 @@ WIN_COMBINATIONS.each do |win_combination|
   win_index_2 = win_combination[1]
   win_index_3 = win_combination[2]
 
-  position_1 = board[win_index_1]
-  position_2 = board[win_index_2]
-  position_3 = board[win_index_3]
+  position_1 = @board[win_index_1]
+  position_2 = @board[win_index_2]
+  position_3 = @board[win_index_3]
 
-  position_1 == position_2 && position_2 == position_3 && position_taken(board, win_index_1)
+  position_1 == position_2 && position_2 == position_3 && position_taken(@board, win_index_1)
   end
 end
 
 def full(board)
-  board.all? { |i| i=="X" || i == "O"  }
+  @board.all? { |i| i=="X" || i == "O"  }
 end
 
 def draw(board)
-  if !won(board) && !full(board)
+  if !won(@board) && !full(@board)
     return true
-  elsif !won(board) && !full(board)
+  elsif !won(board) && !full(@board)
     return false
-  else won(board)
+  else won(@board)
     return false
   end
 end
 
 def over(board)
-  if draw(board) || won(board) || full(board)
+  if draw(@board) || won(@board) || full(@board)
     return true
   end
 end
