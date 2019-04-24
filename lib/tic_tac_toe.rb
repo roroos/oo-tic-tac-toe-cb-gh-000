@@ -18,6 +18,6 @@ end
 
 def input_to_index
   puts "Your turn!"
-  input = gets
+  input = gets -1
 end
 }
