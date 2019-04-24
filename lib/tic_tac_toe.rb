@@ -19,6 +19,7 @@ end
 def input_to_index
   puts "Your turn!"
   index = gets -1
+  return index
 end
 
 def move(index,token)
@@ -40,4 +41,8 @@ return false
 end
 end
 
+def turn
+  input_to_index
+
+end
 }
