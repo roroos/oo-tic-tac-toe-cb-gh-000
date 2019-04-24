@@ -59,7 +59,7 @@ def turn
   end
 end
 
-def turn_count
+def turn_count(board)
   puts turnc
 end
 def current_player
