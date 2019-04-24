@@ -64,6 +64,9 @@ def turn_count
 end
 def current_player
   if turnc % 2 == 0
+    token = "X"
+  else
+    token = "O"
 
 def won
 
