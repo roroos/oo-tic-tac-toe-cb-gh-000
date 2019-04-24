@@ -127,4 +127,7 @@ def over(board)
     return true
   end
 end
+
 }
+t = TicTacToe.new
+t.play
