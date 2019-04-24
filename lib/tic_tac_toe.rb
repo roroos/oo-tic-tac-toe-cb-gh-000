@@ -60,7 +60,7 @@ def turn
 end
 
 def turn_count(board)
-  puts turnc
+  turnc = 0
 end
 def current_player
   if turnc % 2 == 0
