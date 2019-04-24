@@ -13,6 +13,7 @@ WIN_COMBINATIONS = [
 [2,4,6]
 ]
 turnc=0
+token = "X"
 def initialize
 board = Array.new(9, " ")
 end
@@ -61,7 +62,9 @@ end
 def turn_count
   puts turnc
 end
-
+def current_player
+  if turnc % 2 == 0
+    
 def won
 
 end
