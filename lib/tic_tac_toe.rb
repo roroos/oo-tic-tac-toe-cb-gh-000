@@ -97,5 +97,5 @@ def draw(board)
 end
 
 def over(board)
-  if draw(board)
+  if draw(board) || won(board)
 }
