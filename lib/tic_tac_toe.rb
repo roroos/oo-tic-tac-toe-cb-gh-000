@@ -42,7 +42,11 @@ end
 end
 
 def turn
-  input_to_index
+  choice = input_to_index
+  if valid_move(choice) == true
 
+  else
+
+  end
 end
 }
