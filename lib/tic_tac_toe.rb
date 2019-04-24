@@ -67,6 +67,8 @@ def current_player
     token = "X"
   else
     token = "O"
+  end
+end
 
 def won
 WIN_COMBINATIONS.each do |win_combination|
