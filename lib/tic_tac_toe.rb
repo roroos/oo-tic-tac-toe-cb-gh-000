@@ -16,8 +16,9 @@ WIN_COMBINATIONS = [
 turnc=0
 token = "X"
 
-def initialize
-board = Array.new(9, " ")
+def initialize_board
+@count=0
+@board = Array.new(9, " ")
 end
 
 def display_board
