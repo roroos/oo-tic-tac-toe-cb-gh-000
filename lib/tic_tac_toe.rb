@@ -19,6 +19,7 @@ token = "X"
 def initialize_board
 @count=0
 @board = Array.new(9, " ")
+@player = PLAYER_ONE
 end
 
 def display_board
