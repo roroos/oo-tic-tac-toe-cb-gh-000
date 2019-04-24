@@ -132,4 +132,3 @@ def over(board)
 end
 
 }
-
